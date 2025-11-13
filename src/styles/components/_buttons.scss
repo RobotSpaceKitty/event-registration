@@ -1,6 +1,16 @@
-@use "@/styles/abstracts" as *;
+@use "@/styles/abstracts/variables" as v;
 
 .btn {
-  padding: $space-md;
-  background: $primary;
+  padding: v.$space-sm v.$space-md;
+  border-radius: 0.375rem;
+  border: 1px solid v.$color-border;
+  background: white;
+  cursor: pointer;
+}
+
+.btn {
+  &--primary {
+    background: v.$color-primary;
+    color: white;
+  }
 }

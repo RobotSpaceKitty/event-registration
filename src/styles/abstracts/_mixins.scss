@@ -1,31 +1,39 @@
-@use "./variables" as *;
+@use "breakpoints" as bp;
 
-// Flex helpers
+// Universal responsive mixin using the breakpoint map
+@mixin respond($size) {
+  @media (min-width: bp.bp($size)) {
+    @content;
+  }
+}
+
+// convenience mixins
+@mixin respond-sm {
+  @include respond(sm) {
+    @content;
+  }
+}
+
+@mixin respond-md {
+  @include respond(md) {
+    @content;
+  }
+}
+
+@mixin respond-lg {
+  @include respond(lg) {
+    @content;
+  }
+}
+
+@mixin respond-xl {
+  @include respond(xl) {
+    @content;
+  }
+}
+
 @mixin flex-center {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-// Text truncation
-@mixin truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-// Button reset
-@mixin button-reset {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
-// Card shadow helper
-@mixin card-shadow {
-  box-shadow: $shadow-md;
-  border-radius: $radius-md;
-  background: $white;
+  justify-content: center;
 }

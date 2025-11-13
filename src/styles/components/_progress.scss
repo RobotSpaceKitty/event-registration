@@ -1,11 +1,13 @@
-@use "@/styles/abstracts" as *;
-@use "@/styles/layout" as *;
+@use "@/styles/abstracts/variables" as v;
 
 .progress {
-  @include container;
+  display: flex;
+  gap: v.$space-md;
+}
 
-  &__step {
-    height: 4px;
-    background: $color-border;
-  }
+.progress__step {
+  width: 12px;
+  height: 12px;
+  border: 2px solid v.$color-border;
+  border-radius: 50%;
 }

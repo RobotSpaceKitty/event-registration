@@ -1,14 +1,72 @@
-@use "@/styles/abstracts" as *;
+@use "@/styles/abstracts/variables" as v;
 
-h1, h2, h3, h4, h5, h6 {
+// Font sizes
+.text-xs {
+  font-size: v.$font-xs;
+}
+
+.text-sm {
+  font-size: v.$font-sm;
+}
+
+.text-base {
+  font-size: v.$font-base;
+}
+
+.text-lg {
+  font-size: v.$font-lg;
+}
+
+.text-xl {
+  font-size: v.$font-xl;
+}
+
+.text-2xl {
+  font-size: v.$font-2xl;
+}
+
+.text-3xl {
+  font-size: v.$font-3xl;
+}
+
+.text-4xl {
+  font-size: v.$font-4xl;
+}
+
+// Font weight utilities
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
   font-weight: 600;
-  margin-bottom: $space-md;
 }
 
-p {
-  margin-bottom: $space-md;
+.font-bold {
+  font-weight: 700;
 }
 
-small {
-  font-size: $font-size-sm;
+// Line-height utilities
+.leading-none {
+  line-height: 1;
+}
+
+.leading-tight {
+  line-height: 1.2;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-loose {
+  line-height: 1.75;
 }

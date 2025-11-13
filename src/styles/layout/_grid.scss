@@ -1,7 +1,0 @@
-@use "@/styles/abstracts" as *;
-
-@mixin grid($columns: 2, $gap: $space-md) {
-  display: grid;
-  grid-template-columns: repeat($columns, 1fr);
-  gap: $gap;
-}

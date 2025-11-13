@@ -1,10 +1,16 @@
-// Breakpoints similar to Bootstrap
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+@use "sass:map";
 
-@mixin respond-sm { @media (min-width: $breakpoint-sm) { @content; } }
-@mixin respond-md { @media (min-width: $breakpoint-md) { @content; } }
-@mixin respond-lg { @media (min-width: $breakpoint-lg) { @content; } }
-@mixin respond-xl { @media (min-width: $breakpoint-xl) { @content; } }
+// Centralized breakpoint map
+$breakpoints: (
+  xs: 360px,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px,
+);
+
+// Getter function
+@function bp($size) {
+  @return map.get($breakpoints, $size);
+}

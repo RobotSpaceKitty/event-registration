@@ -1,6 +1,7 @@
-@use "@/styles/abstracts" as *;
+@use "@/styles/abstracts/variables" as v;
 
-@mixin container {
+/* Layout container */
+.container {
   width: min(1100px, 90%);
   margin-inline: auto;
 }

@@ -1,4 +1,19 @@
-@use "@/styles/abstracts" as *;
-@use "@/styles/base";
-@use "@/styles/layout";
-@use "@/styles/components";
+//not part of SCSS system
+@use "./globals";
+
+//Design tokens
+@use "./abstracts" as *;
+
+//Base
+@use "./base/reset";
+@use "./base/typography";
+
+//Layout
+@use "./layout/container";
+@use "./layout/grid-layout";
+
+//Components
+@use "./components" as *;
+
+//Utilities
+@use "./utilities" as *;

@@ -1,0 +1,33 @@
+@use "@/styles/abstracts/mixins" as m;
+
+// Responsive visibility
+.hide-sm {
+  @include m.respond(sm) {
+    display: none !important;
+  }
+}
+
+.hide-md {
+  @include m.respond(md) {
+    display: none !important;
+  }
+}
+
+.hide-lg {
+  @include m.respond(lg) {
+    display: none !important;
+  }
+}
+
+// Responsive text
+.text-center-md {
+  @include m.respond(md) {
+    text-align: center;
+  }
+}
+
+.text-right-lg {
+  @include m.respond(lg) {
+    text-align: right;
+  }
+}

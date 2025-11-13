@@ -1,26 +1,31 @@
-.grid-2 {
+@use "@/styles/abstracts/mixins" as m;
+
+/* ----------------------------------------------------------
+   Inline Grid Responsive Utility
+   - Always inline-grid
+   - Columns change by breakpoint
+----------------------------------------------------------- */
+
+.inline-grid-responsive {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+  width: 100%;
+  gap: 16px; // optional default gap
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
+  // Mobile — single column
+  grid-template-columns: 1fr;
 
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
+  // Small screens (>= sm)
+  @include m.respond(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.gap-sm {
-  gap: 8px;
-}
+  // Medium screens (>= md)
+  @include m.respond(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-.gap-md {
-  gap: 16px;
-}
-
-.gap-lg {
-  gap: 24px;
+  // Large screens (>= lg)
+  @include m.respond(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

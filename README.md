@@ -168,3 +168,52 @@ These combine to create a scalable, modular, and well-structured front-end archi
   A consistent spacing and alignment system across all pages.
 
 ---
+
+
+## To-Do List / Remaining Work
+1. SCSS Utilities & Architecture
+
+Add responsive flex utilities (items-center-md, justify-end-lg, etc.)
+Expand grid utilities (auto-fit, minmax layouts, responsive grids)
+Add border utility auto-generator using Sass maps
+Improve spacing utilities with responsive variants
+Add additional typography utilities (tracking, decoration, responsive type)
+Add dark mode variables & utilities
+
+2. Components
+
+Build standardized component classes (cards, buttons, forms, alerts)
+Add component states (hover, focus, disabled)
+Add responsive component variants
+
+3. Layout System
+
+Expand container utilities (fluid containers, breakpoints)
+Add layout helpers (stack, cluster, sidebar, split patterns)
+Improve inline-grid-responsive for more flexible layout patterns
+
+4. Documentation
+
+Write full design token documentation (colors, spacing, shadows, typography)
+Add usage examples for utility classes
+Document responsive naming conventions
+Create visual examples for each utility group
+
+5. JS Integration
+
+Clean up step navigation logic
+Add form validation states (error, success)
+Add progressive enhancement for interactive UI components
+
+6. Accessibility Improvements
+
+Add aria attributes to interactive components
+Improve focus states with consistent styling
+Add skip-to-content link
+
+7. Global Cleanup
+
+Consolidate unused classes and remove duplicates
+Ensure consistent naming conventions across all utilities
+Validate compiled CSS bundle size and optimize where needed
+More sections can be added as work expands.

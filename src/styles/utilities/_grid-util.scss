@@ -1,11 +1,5 @@
 @use "@/styles/abstracts/mixins" as m;
 
-/* ----------------------------------------------------------
-   Inline Grid Responsive Utility
-   - Always inline-grid
-   - Columns change by breakpoint
------------------------------------------------------------ */
-
 .inline-grid-responsive {
   display: grid;
   width: 100%;

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event-registration</title>
+
+    <link rel="stylesheet" href="/src/styles/globals.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Event Registration</h1>
+    </header>
+
+    <div class="progress">
+      <div class="progress__step" data-step="1"></div>
+      <div class="progress__step" data-step="2"></div>
+      <div class="progress__step" data-step="3"></div>
+    </div>
+
+    <main id="steps">
+      <!-- Step 1 -->
+      <section class="step step--active" data-step="1">
+        <h2>Your Info</h2>
+        <form id="form-step-1">
+          <label>
+            Your Name
+            <input type="text" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" required />
+          </label>
+
+          <button type="button" class="btn" data-next>Continue</button>
+        </form>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="step" data-step="2">
+        <h2>Select Sessions</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Keynote</h3>
+            <p>9:00 AM – Main Stage</p>
+            <label><input type="checkbox" /> Add to schedule</label>
+          </div>
+
+          <div class="card">
+            <h3>Workshop: Modern CSS</h3>
+            <p>11:30 AM – Room A2</p>
+            <label><input type="checkbox" /> Add to schedule</label>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button type="button" class="btn btn--ghost" data-prev>Back</button>
+          <button type="button" class="btn" data-next>Continue</button>
+        </div>
+      </section>
+
+      <!-- Step 3 -->
+      <section class="step" data-step="3">
+        <h2>Confirm Registration</h2>
+
+        <p>Review your choices and submit your registration.</p>
+
+        <div class="btn-row">
+          <button type="button" class="btn btn--ghost" data-prev>Back</button>
+          <button type="submit" class="btn btn--primary">Submit</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+    
+  </body>
+</html>

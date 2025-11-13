@@ -1,0 +1,81 @@
+// ---------------------------------------------
+// COLOR SYSTEM (Bootstrap-like)
+// ---------------------------------------------
+
+$white: #fff;
+$black: #000;
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #0dcaf0;
+$light: $gray-100;
+$dark: $gray-900;
+
+// ---------------------------------------------
+// SPACING SCALE
+// ---------------------------------------------
+$space-0: 0;
+$space-1: 0.25rem; // 4px
+$space-2: 0.5rem;  // 8px
+$space-3: 1rem;    // 16px
+$space-4: 1.5rem;  // 24px
+$space-5: 3rem;    // 48px
+
+// Shorthand
+$space-xs: $space-1;
+$space-sm: $space-2;
+$space-md: $space-3;
+$space-lg: $space-4;
+$space-xl: $space-5;
+
+// ---------------------------------------------
+// TYPOGRAPHY
+// ---------------------------------------------
+$font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+$font-size-base: 1rem; // 16px
+$font-size-sm: .875rem;
+$font-size-lg: 1.25rem;
+
+$line-height-base: 1.5;
+
+// ---------------------------------------------
+// BORDER RADIUS
+// ---------------------------------------------
+$radius-sm: 0.2rem;
+$radius-md: 0.375rem;
+$radius-lg: 0.5rem;
+
+// ---------------------------------------------
+// SHADOWS
+// ---------------------------------------------
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, .05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, .1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, .15);
+
+// ---------------------------------------------
+// COLOR BORDERS
+// ---------------------------------------------
+
+$color-border:        $gray-300;
+$color-border-light:  $gray-200;
+$color-border-heavy:  $gray-400;
+
+$color-border-primary:  $primary;
+$color-border-success:  $success;
+$color-border-danger:   $danger;
+$color-border-warning:  $warning;
+$color-border-info:     $info;

@@ -1,0 +1,11 @@
+@use "@/styles/abstracts" as *;
+@use "@/styles/layout" as *;
+
+.progress {
+  @include container;
+
+  &__step {
+    height: 4px;
+    background: $color-border;
+  }
+}

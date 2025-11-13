@@ -1,0 +1,6 @@
+@use "@/styles/abstracts" as *;
+
+@mixin container {
+  width: min(1100px, 90%);
+  margin-inline: auto;
+}

@@ -1,0 +1,15 @@
+@use "@/styles/abstracts" as *;
+
+// Margin utilities
+.m-0   { margin: 0 !important; }
+.mt-1  { margin-top: $space-1 !important; }
+.mb-2  { margin-bottom: $space-2 !important; }
+
+// Padding utilities
+.p-1   { padding: $space-1 !important; }
+.p-2   { padding: $space-2 !important; }
+.p-3   { padding: $space-3 !important; }
+
+// Text utilities
+.text-center { text-align: center !important; }
+.text-right  { text-align: right !important; }

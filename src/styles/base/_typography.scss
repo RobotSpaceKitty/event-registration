@@ -1,6 +1,35 @@
 @use "@/styles/abstracts/variables" as v;
 
-// Font sizes
+/* ----------------------------------------
+   WEB-SAFE FONT
+---------------------------------------- */
+
+/* Default */
+.font-sans {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.font-serif {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+/* set default body font here */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+/* ----------------------------------------
+   FONT SIZES
+---------------------------------------- */
+
 .text-xs {
   font-size: v.$font-xs;
 }
@@ -33,7 +62,10 @@
   font-size: v.$font-4xl;
 }
 
-// Font weight utilities
+/* ----------------------------------------
+   FONT WEIGHTS
+---------------------------------------- */
+
 .font-light {
   font-weight: 300;
 }
@@ -54,7 +86,10 @@
   font-weight: 700;
 }
 
-// Line-height utilities
+/* ----------------------------------------
+   LINE HEIGHT
+---------------------------------------- */
+
 .leading-none {
   line-height: 1;
 }

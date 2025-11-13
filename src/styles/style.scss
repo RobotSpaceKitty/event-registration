@@ -5,15 +5,14 @@
 @use "./abstracts" as *;
 
 //Base
-@use "./base/reset";
-@use "./base/typography";
+@use "./base/" as *;
 
 //Layout
 @use "./layout/container";
 @use "./layout/grid-layout";
 
 //Components
-@use "./components" as *;
+@use "./components" as components;
 
 //Utilities
 @use "./utilities" as *;

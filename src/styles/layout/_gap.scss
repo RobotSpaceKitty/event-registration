@@ -1,0 +1,26 @@
+@use "@/styles/abstracts/variables" as v;
+
+// spacing scale
+$space-scale: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 24px,
+  6: 32px,
+);
+
+@each $key, $val in v.$space-scale {
+  .gap-#{$key} {
+    gap: $val;
+  }
+
+  .row-gap-#{$key} {
+    row-gap: $val;
+  }
+
+  .col-gap-#{$key} {
+    column-gap: $val;
+  }
+}

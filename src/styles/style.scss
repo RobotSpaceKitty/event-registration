@@ -8,8 +8,7 @@
 @use "./base/" as *;
 
 //Layout
-@use "./layout/container";
-@use "./layout/grid-layout";
+@use "./layout/" as *;
 
 //Components
 @use "./components" as components;

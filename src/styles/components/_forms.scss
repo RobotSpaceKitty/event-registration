@@ -1,8 +1,102 @@
 @use "@/styles/abstracts/variables" as v;
+@use "@/styles/abstracts/mixins" as m;
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="phone"] {
   padding: v.$space-sm;
   border: 1px solid v.$color-border;
   border-radius: 4px;
+}
+
+
+/* Container for spacing */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: v.$space-md;
+}
+
+/* Labels */
+.form-group label {
+  font-size: v.$font-sm;
+  font-weight: 500;
+  margin-bottom: v.$space-xs;
+  color: v.$gray-700;
+}
+
+/* Base input styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: v.$space-sm v.$space-md;
+  border: 1px solid v.$color-border;
+  border-radius: v.$radius-md;
+  background: white;
+  font-size: v.$font-base;
+  color: v.$gray-900;
+  transition: all 0.2s ease;
+}
+
+/* Focus style */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: v.$color-primary;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+/* Hover */
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: v.$gray-400;
+}
+
+/* Disabled */
+.form-group input:disabled,
+.form-group select:disabled,
+.form-group textarea:disabled {
+  background: v.$gray-100;
+  border-color: v.$gray-300;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Error state */
+.form-group--error label {
+  color: v.$color-danger;
+}
+
+.form-group--error input {
+  border-color: v.$color-danger;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+.form-error-message {
+  font-size: v.$font-sm;
+  color: v.$color-danger;
+  margin-top: v.$space-xs;
+}
+
+/* Inline layout support */
+.form-inline {
+  display: flex;
+  gap: v.$space-md;
+}
+
+.form-inline .form-group {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+/* Responsive example */
+@media (min-width: 768px) {
+  .form-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: v.$space-lg;
+  }
 }

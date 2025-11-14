@@ -31,20 +31,42 @@
       >
         <h2 id="step1-title" class="text-lg font-medium">Your Info</h2>
 
-        <form class="d-grid gap-4 my-4">
-          <div class="form-group">
-            <label for="user-name" class="text-sm mb-1">Your Name</label>
-            <input id="user-name" type="text" class="w-full" required />
-          </div>
+        <form name="event-registration" class="my-4">
+          <div class="form-row-3">
+            <div class="form-group">
+              <label for="user-name" class="text-sm">Name</label>
+              <input
+                id="user-name"
+                name="user-name"
+                type="text"
+                class="mt-2 w-full"
+                required
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="user-email" class="text-sm mb-1">Email</label>
-            <input id="user-email" type="email" class="w-full" required />
-          </div>
+            <div class="form-group">
+              <label for="user-email" class="text-sm">Email</label>
+              <input
+                id="user-email"
+                name="user-email"
+                type="email"
+                class="mt-2 w-full"
+                required
+              />
+            </div>
 
-          <button type="button" class="btn btn--primary mt-4" data-next>
-            Continue
-          </button>
+            <div class="form-group">
+              <label for="user-phone" class="text-sm">Phone</label>
+              <input
+                id="user-phone"
+                name="user-phone"
+                type="text"
+                class="mt-2 w-full"
+                required
+              />
+            </div>
+          </div>
+          <button class="btn btn--primary mt-4" data-next>Continue</button>
         </form>
       </section>
 
@@ -55,7 +77,9 @@
           <div class="card shadow-sm">
             <h3 class="text-base mb-1">Workshop: Modern Python</h3>
             <p class="text-sm text-muted mb-2">8:30 AM – Room A1</p>
-            <label for="session-python" class="text-sm flex-left gap-2 font-sans"
+            <label
+              for="session-python"
+              class="text-sm flex-left gap-2 font-sans"
               ><input id="session-python" type="checkbox" /> Add to
               schedule</label
             >
@@ -63,7 +87,9 @@
           <div class="card shadow-sm">
             <h3 class="text-base mb-1">Keynote</h3>
             <p class="text-sm text-muted mb-2">9:00 AM – Main Stage</p>
-            <label for="session-keynote" class="text-sm flex-left gap-2 font-sans"
+            <label
+              for="session-keynote"
+              class="text-sm flex-left gap-2 font-sans"
               ><input id="session-keynote" type="checkbox" /> Add to
               schedule</label
             >
@@ -86,7 +112,9 @@
           <div class="card shadow-sm">
             <h3 class="text-base mb-1">Speaker: Maximilian Schwarzmüller</h3>
             <p class="text-sm text-muted mb-2">1:00 PM – Main Stage</p>
-            <label for="session-speaker" class="text-sm flex-left gap-2 font-sans"
+            <label
+              for="session-speaker"
+              class="text-sm flex-left gap-2 font-sans"
               ><input id="session-speaker" type="checkbox" /> Add to
               schedule</label
             >
@@ -96,7 +124,8 @@
             <h3 class="text-base mb-1">Demo: Manipulating Web Pages</h3>
             <p class="text-sm text-muted mb-2">2:30 PM – Room A2</p>
             <label for="session-manip" class="text-sm flex-left gap-2 font-sans"
-              ><input id="session-manip" type="checkbox" /> Add to schedule</label
+              ><input id="session-manip" type="checkbox" /> Add to
+              schedule</label
             >
           </div>
         </div>
@@ -109,7 +138,9 @@
 
       <!-- STEP 3 -->
       <section class="step" data-step="3" aria-labelledby="step3-title">
-        <h2 id="step3-title" class="text-lg font-medium">Confirm Registration</h2>
+        <h2 id="step3-title" class="text-lg font-medium">
+          Confirm Registration
+        </h2>
         <p class="text-sm my-4 text-muted">
           Review your choices and submit your registration.
         </p>

@@ -5,3 +5,11 @@
 .visible {
   display: block !important;
 }
+
+.step {
+  display: none !important;
+}
+
+.step--active {
+  display: block !important;
+}

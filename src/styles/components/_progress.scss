@@ -9,4 +9,8 @@
   height: 12px;
   border: 2px solid v.$color-border;
   border-radius: 50%;
+
+  &.step--active {
+    background: v.$color-primary;
+  }
 }
